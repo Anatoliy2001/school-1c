@@ -1,0 +1,452 @@
+@font-face {
+    font-family: 'bignoodletitling';
+    src: url('font/bignoodletitling.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+.topheader {
+    z-index: 99999; /*CSS-свойство z-index определяет положение позиционированного элемента и его дочерних элементов или флекс-элементов по оси z. 
+    Перекрывающие элементы с большим значением z-index будут накладываться поверх элементов с меньшим z-index. */
+    position: fixed; /*Элемент выбивается из обычного потока документа, и для элемента в макете страницы не создаётся пространство.
+     Он позиционируется относительно исходного содержащего блока,*/
+    width: 100%;
+    background: white;
+    height: 140px;
+}
+body {
+    font-size: 14px;
+    line-height: 100%;
+    font-weight: 300;
+    background: #ffffff;
+}
+.logo {
+    display: block;
+    position: absolute;
+    bottom: auto; /*располагается так же, как при статическом позиционировании.*/
+}
+.logo>a>img {
+    margin-top: -10px;
+    padding-right: 10px;
+    height: 60px;
+}
+.logo>a{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    width: 70%;
+    color: #696969;
+    text-transform: uppercase;
+    font-size: 20px; /* стилизуют заголовки с помощью прописных букв.*/
+    line-height: initial; /* устанавливает величину пространства между строками, например в тексте.
+     В блочных элементах оно указывает минимальную высоту блоков строк внутри элемента.*/
+}
+.banner {
+    background: url(images/slider.jpg) #696969 ;
+    background-blend-mode: multiply, normal; /* Затемним картинку */
+    display: flex;
+    color: #d6d5d5;
+    align-items: center;
+    min-height: 650px;
+    width: 100%;
+    background-size: cover; /* Размер картинки и положение cover - на весь экран*/
+    text-align: center;
+}
+li {
+    list-style-type: none; /* Убираем маркеры */
+   }
+.banner h2{
+    font-size: 3rem;
+}
+.banner p {
+    font-size: 2rem;
+}
+.scrolldown {
+    position: absolute;
+    left: calc(50% - 52px);
+    margin-top: 10%;
+}
+.scrolldown img {
+    margin-bottom: 20px;
+}
+.scrolldown p {
+    margin-bottom: 30px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+}
+h3 {
+    font-size: 38px;
+    text-transform: uppercase;
+    color: #696969;
+    line-height: initial;
+}
+.head_white_content span{
+    background-color: #f4511e;
+    display: inline-block;
+    width: 200px;
+    height: 3px;
+}
+.head_white_content{
+    padding: 5%;
+    text-align: center;
+    width: 100%;
+}
+.head_white_content p{
+    padding: 20px 90px 0px;
+    color: #696969;
+}
+.head_white_content2{
+    padding: 5%;
+    text-align: center;
+    width: 100%;
+}
+.head_white_content2 p{
+    padding: 20px 90px 0px;
+    color: #696969;
+}
+.aboutus{
+    margin-bottom: 90px;
+}
+.advantage {
+    text-align: center;
+    width: 100%;
+    background: #ebebeb;
+    padding: 30px;
+    margin: 3% 0; /* по вертикали | по горизонтали */
+}
+.advantage span {
+    font-size: 70px;
+    color: #f4511e;
+}
+.advantage h4 {
+    font-family: 'Roboto', sans-serif; /*  Глифы имеют гладкие окончания. */
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.25px;
+    color: #707070;
+    padding: 25px 0 13px; /* Сверху | По горизонтали | Снизу */
+}
+.advantage p {
+    color: #707070;
+    font-size: 14px;
+    line-height: 100%;
+}
+.somefutures {
+    background-color: #171f23;
+    text-align: center;
+    color: #f6f6f6;
+    padding: 60px 0px;
+    display: block;
+}
+h4 {
+    text-transform: uppercase;
+    font-size: 36px;
+}
+.head_black_content {
+    padding-bottom: 20px;
+    text-align: center;
+}
+.head_black_content span {
+    display: inline-block;
+    width: 80px;
+    height: 1px;
+    margin: 25px auto 0;
+    background: #404040;
+}
+.head_black_content2 {
+    text-align: center;
+    color: #f6f6f6;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.head_black_content2 span {
+    display: inline-block;
+    width: 80px;
+    height: 1px;
+    margin: 25px auto 0;
+}
+.numeral>div>span {
+    font-size: 60px;
+    color: #ff7062;
+}
+.numeral>div>p {
+    padding: 25px 0 13px;
+    color: #ebebeb;
+    font-size: 20px;
+    line-height: 100%;
+}
+.numeral>div>h5 {
+    padding: 25px 0 13px;
+    font-family: 'Roboto', sans-serif;
+    color: #ebebeb;
+    text-transform: uppercase;
+    font-size: 36px;
+}
+.price-content-head{
+    background: #0e1316;
+    color: #ffffff;
+    font-family: -apple-system- BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 40px 0 30px;
+}
+.price-content-head h4{
+    padding-top: 6px;
+    font-size: 24px;
+}
+.price-content-head p{
+    margin-top: 25px;
+    padding: 0 25px;
+    font-size: 14px;
+}
+.price-content-body{
+    background: #1f282c;
+    padding: 45px 0 40px;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+.price-content-body p{
+    font-size: 15px;
+    padding-bottom: 20px;
+    color: #ffffff;
+}
+.price-content-body p span{
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: 2px;
+}
+.price-content-body a{
+    background: #f4511e;
+    color: #ffffff;
+    border-radius: 5px;
+    font-weight: 700;
+    padding: 10px 30px;
+}
+
+.price-content{
+    margin: 5% 0;
+    width: 110%;
+}
+.price-content:hover{
+    border: 1px solid #f4511e;
+}
+.price-content:hover .price-content-body>p>span{
+    color: #f4511e;
+}
+
+.row .teamslider {
+    margin: auto;
+    width: 900px;
+    margin-bottom: 50px;
+}
+.sinner1{
+    width: 25%;
+    padding: 9% 5%;
+    text-align: center;
+    background: #ebebeb;
+    min-height: 440px;
+}
+.sinner1 img{
+    margin: 0 auto;
+}
+.sinner1 a img{
+    display: inherit;
+    width: 20%;
+}
+.sinner1 h4{
+    margin-top: 10px;
+    font-size: 20px;
+}
+.sinner15{
+    width: 2%;
+}
+.sinner2{
+    width: 73%;
+    padding: 9% 5%;
+    background: #ebebeb;
+    min-height: 440px;
+}
+.team {
+    padding-bottom: 90px;
+}
+.team .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    left: -34%;
+}
+.paterns {
+    background: url(images/cbanner.jpg) no-repeat center;
+    background-size: cover;
+    color: #f6f6f6;
+    padding: 30px 0; 
+}
+.slides{
+    display: flex;
+    align-items: center;
+}
+.innerwidth{
+    width: 70%;
+    margin: 0 auto;
+}
+.getintouch{
+    padding: 80px 0;
+}
+.textinput {
+    margin: 40px 0;
+}
+.textinput p, .textmsg p {
+    font-weight: 700;
+    color: #696969;
+    margin-bottom: 5px;
+}
+.textinput p span, .textmsg p span {
+    color: #f6744b;
+    margin-left: 5px;
+}
+.textinput input {
+    border: 0;
+    border-bottom: 1px solid #cacaca;
+    width: 90%;
+    height: 40px;
+    outline: 0;
+}
+.textmsg textarea {
+    border: 0;
+    border-bottom: 1px solid #cacaca;
+    width: 95%;
+    height: 80px;
+    outline: 0;
+    padding-top: 10px;
+}
+.getintouch form {
+    width: 70%;
+    margin: 0 auto;
+}
+.submit {
+    width: 205px;
+    height: 50px;
+    letter-spacing: 1px;
+    background: #f6744b;
+    border: 1px solid #f6744b;
+    color: #fff;
+    display: block;
+    margin: 50px auto 0;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.submit:hover {
+    color: #f6744b;
+    transition: 0.5s;
+    background: #fff;
+}
+.textinput input:focus, .textmsg textarea:focus {
+    box-shadow: 0px 1px 3px 4px rgba(246, 116, 75, 0.5);
+}
+.map span{
+    margin-left: 10px;
+    font-weight: 700;
+    color: #f15324;
+    font-size: 24px;
+    
+}
+.accordion-open span::before{
+    font-family: 'Linearicons-Free';
+    content: "\e873";
+}
+.accordion-close span::after{
+    font-family: 'Linearicons-Free';
+    content: "\e874";
+}
+footer{
+    background-color: #171f23;
+    text-align: center;
+    color: #f6f6f6;
+    padding: 60px 0px;
+    display: block;
+}
+.primary-nav-trigger {
+    position: absolute;
+    right: 20%;
+    top: 0;
+    height: 100%;
+    width: 60px;
+}
+.primary-nav-trigger .menu-icon.is-clicked {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.primary-nav-trigger .menu-icon.is-clicked::before {
+    top: 0;
+    transform: rotate(135deg);
+}
+
+.primary-nav-trigger .menu-icon.is-clicked::after {
+    top: 0;
+    transform: rotate(225deg);
+}
+
+.primary-nav {
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: 150px 0 0;
+    background:rgba(0, 0, 0, 0.5);
+    text-align: center;
+    backface-visibility: hidden;
+    overflow: auto;
+    transform: translateY(-100%);
+    transition-property: transform;
+    transition-duration: 0.4s;
+}
+
+.primary-nav li {
+    font-weight: 300;
+    margin: .2em 0;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+.primary-nav.is-visible {
+    transform: translateY(0);
+}
+.primary-nav a {
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 20px 1em;
+    border-radius: 0.25em;
+    transition: background 0.2s;
+    color: #fff;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.primary-nav a:hover {
+    background-color: #e36767;
+}
+
+.primary-nav-trigger .menu-icon {
+    display: inline-block;
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    width: 39px;
+    height: 2px;
+    background-color: black;
+}
+
+.primary-nav-trigger .menu-icon::before, .primary-nav-trigger .menu-icon::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    transition: transform .3s, top .3s;
+}
+.topheader.is-fixed{
+    height: 80px;
+}
+.topheader.is-fixed a{
+    margin-top: 0px;
+}
